@@ -19,6 +19,10 @@
     <div id="app">
         <p v-if="show">yuo can see me!</p>
         <p v-else>Now you see me!</p>
+        <template v-if="show">
+            <h1>Heading</h1>
+            <p>inside a template</p>
+        </template>
         <p>Do you also see me?</p>
         <button @click="show = !show">switch</button>
     </div>
